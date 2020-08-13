@@ -40,10 +40,12 @@ body{
   justify-content: space-between;
 }
 
-.form-btns a{
+.send-btn, .reset-btn{
   text-decoration: none;
   text-transform: capitalize;
   padding: 8px 14px;
+  border: none;
+  outline: none;
   background-color: green;
 }
 
