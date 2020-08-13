@@ -1,9 +1,9 @@
 // Variables
-const sendBtn = document.getElementById('sendBtn'),
+const sendBtn = document.getElementById('send-btn'),
     email = document.getElementById('email'),
     subject = document.getElementById('subject'),
     message = document.getElementById('message'),
-    resetBtn = document.getElementById('resetBtn'),
+    resetBtn = document.getElementById('reset-btn'),
     sendMailForm = document.getElementById('email-form');
 
 
