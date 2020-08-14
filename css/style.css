@@ -47,7 +47,18 @@ body{
   padding: 8px 14px;
   border: none;
   outline: none;
+  color: white;
   background-color: green;
+}
+
+
+.l-icon{
+  margin-left: 10px;
+
+}
+
+.r-icon{
+  margin-left: 10px;
 }
 
 
