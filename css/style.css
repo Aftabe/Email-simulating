@@ -118,5 +118,10 @@ input[type=submit]:hover {
 
 /* loaders */
 #loaders{
-  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.spinner{
+  display: none;
 }
