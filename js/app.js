@@ -55,7 +55,7 @@ function sendEmail(e){
 
     // Show the img
     const sendEmailImg = document.createElement('img');
-    sendEmailImg.src = 'img/mail.gif';
+    sendEmailImg.src = 'img/mail-sending.gif';
     sendEmailImg.style.display = 'block';
 
     // Hide spinner then show the send mail img
