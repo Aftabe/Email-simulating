@@ -4,8 +4,7 @@ const sendBtn = document.getElementById('send-btn'),
     subject = document.getElementById('subject'),
     message = document.getElementById('message'),
     resetBtn = document.getElementById('reset-btn'),
-    sendMailForm = document.getElementById('email-form'),
-    html = new HTMLUI();
+    sendMailForm = document.getElementById('email-form');
 
 
 
@@ -33,31 +32,6 @@ function evetListners() {
 }
 
 
-
-// Object
-// HTML Elements
-function HTMLUI() {}
-
-
-
-
-HTMLUI.prototype.printError = function(message) {
-    // Create the Div
-    const div = document.createElement('div');
-    div.classList = 'error';
-
-    // Insert
-    div.innerHTML = `
-            <p>${message}</p>
-    `;
-
-    form.insertBefore(div, document.querySelector('.form-group'));
-
-    setTimeout( function() {
-            document.querySelector('.error').remove();
-    }, 3000 ) ;
-
-}
 
 // Function
 
