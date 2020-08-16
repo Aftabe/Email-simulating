@@ -4,7 +4,8 @@ const sendBtn = document.getElementById('send-btn'),
     subject = document.getElementById('subject'),
     message = document.getElementById('message'),
     resetBtn = document.getElementById('reset-btn'),
-    sendMailForm = document.getElementById('email-form');
+    sendMailForm = document.getElementById('email-form'),
+    html = new HTMLUI();
 
 
 
@@ -33,10 +34,30 @@ function evetListners() {
 
 
 
+// Object
+// HTML Elements
+function HTMLUI() {}
 
 
 
 
+HTMLUI.prototype.printError = function(message) {
+    // Create the Div
+    const div = document.createElement('div');
+    div.classList = 'error';
+
+    // Insert
+    div.innerHTML = `
+            <p>${message}</p>
+    `;
+
+    form.insertBefore(div, document.querySelector('.form-group'));
+
+    setTimeout( function() {
+            document.querySelector('.error').remove();
+    }, 3000 ) ;
+
+}
 
 // Function
 
@@ -93,6 +114,8 @@ function validateField() {
         if(errors.length === 0){
             // The button should be enabled
             sendBtn.style.backgroundColor = 'green';
+            // print error from previous isntanciate HTMLUI();
+            html.printError('Please fill all the fields');
         }
     }
 }
